@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>三图裤子裁剪与拼接</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="workspace">
+      <header class="header">
+        <div>
+          <h1>三图裤子裁剪与拼接</h1>
+        </div>
+        <button id="generateBtn" type="button">裁剪并生成拼接图</button>
+      </header>
+
+      <div class="panels" id="panels"></div>
+
+      <div class="result">
+        <div class="resultHeader">
+          <div>
+            <h2>最终拼接图</h2>
+            <p id="status">等待上传图片。</p>
+          </div>
+          <div class="resultActions">
+            <button id="copyBtn" type="button">复制图片</button>
+          </div>
+        </div>
+        <img id="stitched" alt="最终拼接结果" />
+      </div>
+
+      <pre id="jsonBox" aria-label="检测数据"></pre>
+    </section>
+  </main>
+  <script src="/static/app.js?v=20260602-preview-box-default"></script>
+</body>
+</html>
